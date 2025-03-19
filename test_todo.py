@@ -13,12 +13,12 @@ def test_add_todo(page: Page) -> None:
 
 
 def test_login(page: Page):
-    page.on("request", lambda request: print(">>", request.method, request.url))
-
-    page.route("**/UserAccountLogin/**", lambda route: route.continue_(post_data='{"username":"eighteendev","password":"Qwerty01!"}'))
-
-    # Логируем ответ сервера
-    page.on("response", lambda response: print("<<",  response.json() if "UserAccountLogin" in response.url else None))
+    # page.on("request", lambda request: print(">>", request.method, request.url))
+    #
+    # page.route("**/UserAccountLogin/**", lambda route: route.continue_(post_data='{"username":"eighteendev","password":"Qwerty01!"}'))
+    #
+    # # Логируем ответ сервера
+    # page.on("response", lambda response: print("<<",  response.json() if "UserAccountLogin" in response.url else None))
 
     # page.on("request", lambda request: print(">>", request.method, request.post_data))
     # page.on("response", lambda response: print("<<", response.status, response.url))
