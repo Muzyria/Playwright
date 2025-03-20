@@ -1,0 +1,34 @@
+{
+    "resultList": [
+        {
+            "cartActive": true,
+            "cartDeviceActive": true,
+            "cartName": "49",
+            "cartTypeName": "Fleet",
+            "id_cartType": 1,
+            "id_cartModel": 2,
+            "cartModelName": "Drive - DC with Controller Access",
+            "id_cartBrand": 1,
+            "cartBrandName": "Yamaha",
+            "deviceActive": true,
+            "id_cart": 100216,
+            "id_device": "S10150000211018049",
+            "id_deviceModel": 8,
+            "deviceModelName": "Utility Tablet - YTR",
+            "cartStatus": "offline",
+            "lastActivity": "250320154126",
+            "disabilityAccess": false,
+            "controllerAccess": true,
+            "marshallAccess": false,
+            "calculatePace": true,
+            "restoreTime": "250320172649",
+            "restoreTimeExpired": true,
+            "deviceFirmwareVersion": "2.20.0",
+            "applicationVersion": "0.0.36",
+            "latitude": 99,
+            "longitude": 255
+        }
+    ],
+    "status": 1,
+    "Status": 1
+}
