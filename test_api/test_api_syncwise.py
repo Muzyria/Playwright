@@ -13,7 +13,7 @@ class TestApiSyncwise:
             route.fulfill(path="test_api/data_syncwice.json")  # Отдаем тот же JSON обратно
 
         # page.route("**/CartDetailsList/**", lambda route: route.fulfill(path="test_api/data_syncwice.json"))
-        page.route("**/CartDetailsList/**", handle_route)
+        # page.route("**/CartDetailsList/**", handle_route)
 
         page.goto('https://sandbox2.syncwise360.com/login')
 
@@ -25,3 +25,5 @@ class TestApiSyncwise:
 
         page.click('//button[@routerlink="/asset"]')
         page.wait_for_timeout(5000)
+
+        
