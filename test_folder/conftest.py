@@ -7,8 +7,8 @@ import pytest
 #     print(f"Маркировки: {list(item.keywords)}")
 #     print(f"Функция: {item.function.__name__}")
 
-def pytest_runtest_setup(item):
-    print(f"\n[SETUP] Подготовка к тесту: {item.name}")
+# def pytest_runtest_setup(item):
+#     print(f"\n[SETUP] Подготовка к тесту: {item.name}")
 
 
 # def pytest_runtest_setup(item):
@@ -56,3 +56,40 @@ def pytest_runtest_setup(item):
 # def user_info(request):
 #     print(f"🔎 Фикстура вызвана в тесте: {request.node.name}")
 #     return {"user": "admin"}
+
+
+# conftest.py
+
+# def pytest_configure(config):
+#     print("\n[HOOK] pytest_configure called")
+#
+#
+# # conftest.py
+#
+# def pytest_addoption(parser):
+#     parser.addoption(
+#         "--env",
+#         action="store",
+#         default="dev",
+#         help="Set the testing environment: dev/staging/prod"
+#     )
+#
+# @pytest.fixture
+# def env(request):
+#     return request.config.getoption("--env")
+#
+#
+# # conftest.py
+#
+# def pytest_collection_modifyitems(config, items):
+#     env = config.getoption("--env")
+#     skip_in_staging = pytest.mark.skip(reason="Disabled in staging environment")
+#
+#     if env == "staging":
+#         for item in items:
+#             if "test_prod_only" in item.nodeid:
+#                 item.add_marker(skip_in_staging)
+#
+
+
+
